@@ -9,6 +9,6 @@ public class EchoController {
 
     @RequestMapping("/")
     public String echo(@RequestParam(value="msg", defaultValue="default val") String msg) {
-        return msg;
+        return msg + " " + msg + " " + msg;
     }
 }
